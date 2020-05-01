@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -15,8 +17,10 @@
     "helmet": "^3.10.0",
     "mongoose": "^5.0.1",
     "path": "^0.12.7",
-    "serve-favicon": "^2.4.5"
+    "serve-favicon": "^2.4.5",
+    "snyk": "^1.316.1"
   },
   "author": "Joe Chapman",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
